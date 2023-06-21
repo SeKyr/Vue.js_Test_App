@@ -12,7 +12,7 @@ export default {
       const startTime = performance.now();
       this.fib(n);
       const endTime = performance.now();
-      return this.elapsedMicroseconds(startTime, endTime);
+      return this.elapsedMilliseconds(startTime, endTime);
     },
     fib(n) {
       if (n <= 2) {
@@ -35,7 +35,7 @@ export default {
         }
       }
       const endTime = performance.now();
-      return this.elapsedMicroseconds(startTime, endTime);
+      return this.elapsedMilliseconds(startTime, endTime);
     },
     binarySearchTreeAlgorithm (n) {
       const data = Array.from(Array(n), (v,i) => Math.floor((Math.sin(i)-Math.sin(i+1)) * 1000));
@@ -44,7 +44,7 @@ export default {
         this.insert(element);
       }
       const endTime = performance.now();
-      return this.elapsedMicroseconds(startTime, endTime);
+      return this.elapsedMilliseconds(startTime, endTime);
     },
     insert(data) {
       let newNode = {
@@ -80,7 +80,7 @@ export default {
       const startTime = performance.now();
       this.reverse(data);
       const endTime = performance.now();
-      return this.elapsedMicroseconds(startTime, endTime);
+      return this.elapsedMilliseconds(startTime, endTime);
     },
     reverse(toReverse) {
       if(toReverse.length === 0) {
@@ -89,9 +89,9 @@ export default {
       const [head , ...tail ] = toReverse ;
       return this.reverse(tail).concat([head]);
     },
-    elapsedMicroseconds(startTime, endTime) {
+    elapsedMilliseconds(startTime, endTime) {
       const executionTime = endTime - startTime;
-      return executionTime * 1000;
+      return Math.floor(executionTime);
     }
   },
 }

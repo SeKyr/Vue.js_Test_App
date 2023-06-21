@@ -2,7 +2,7 @@
   <div style="display: flex;flex-direction: row; justify-content: center; align-items: center">
     <p style="width: 50px; margin: 0; height: fit-content">{{this.name}}:</p>
     <n-input v-on:onstart="(n) => onStart(n)"/>
-    <p style="width: 100px; margin: 0">{{this.executionTime === null ? null : this.executionTime + 'μs; n = ' + this.n}}</p>
+    <p style="width: 100px; margin: 0">{{this.executionTime === null ? null : this.executionTime + 'ms; n = ' + this.n}}</p>
   </div>
 </template>
 
