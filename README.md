@@ -34,6 +34,8 @@ npm run build
 node webserver.js
 ```
 
+URL: http://localhost:4200
+
 ### Lint with [ESLint](https://eslint.org/)
 
 ```sh
