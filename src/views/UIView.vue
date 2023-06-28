@@ -23,7 +23,6 @@ export default {
       const { width, height } = element.getBoundingClientRect();
       this.width = width;
       this.height = height;
-      console.log(this.width, this.height);
     },
   },
 }

@@ -28,7 +28,7 @@ export default {
   methods: {
     onStart(n) {
       this.n = n;
-      this.executionTime = this.algorithmImplementation(n);
+      this.executionTime = this.algorithmImplementation(+n);
     }
   }
 }

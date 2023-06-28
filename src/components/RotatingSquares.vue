@@ -72,8 +72,6 @@ export default {
     this.matrix = Array.from({length: Math.floor(this.width / this.squareSideLength)}, () => Array.from({length: Math.floor(this.height / this.squareSideLength)}, () => {
       return this.isNLargerThanZero();
     }));
-    console.log(this.squareSideLength);
-
   }
 }
 </script>
